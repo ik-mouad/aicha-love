@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pour Aicha ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <!-- Flash overlay -->
+  <div id="flash" aria-hidden="true"></div>
+
+  <main class="card">
+    <h1 class="title">Une petite surprise...</h1>
+    <p class="subtitle">Clique sur le bouton ci-dessous</p>
+    <div class="actions">
+      <button id="surprise">💌 Surprise</button>
+      <button id="mute" class="ghost" title="Activer/Désactiver la musique" hidden>🔈 Son</button>
+    </div>
+
+    <!-- Message caché -->
+    <section id="love" aria-live="polite" class="hidden">
+      <h2 id="line1" class="love-line"></h2>
+      <h3 id="line2" class="love-line"></h3>
+    </section>
+  </main>
+
+  <div class="hearts" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
